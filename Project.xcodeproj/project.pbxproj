@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D5081C11FCF34DA00DE260D /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5081C01FCF34DA00DE260D /* TableViewController.m */; };
 		1D605D2E1FCB7CA800182C28 /* FoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D605D2D1FCB7CA800182C28 /* FoodDetailViewController.m */; };
 		1D605D301FCB7EC300182C28 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D605D2F1FCB7EC300182C28 /* Media.xcassets */; };
 		1D605D331FCB80C000182C28 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D605D321FCB80C000182C28 /* FoodViewController.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D5081BF1FCF34DA00DE260D /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		1D5081C01FCF34DA00DE260D /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		1D605D2C1FCB7CA800182C28 /* FoodDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodDetailViewController.h; sourceTree = "<group>"; };
 		1D605D2D1FCB7CA800182C28 /* FoodDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodDetailViewController.m; sourceTree = "<group>"; };
 		1D605D2F1FCB7EC300182C28 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -177,6 +180,8 @@
 		1D9773F11FC5B11C001DB56C /* ThirdviewController */ = {
 			isa = PBXGroup;
 			children = (
+				1D5081BF1FCF34DA00DE260D /* TableViewController.h */,
+				1D5081C01FCF34DA00DE260D /* TableViewController.m */,
 			);
 			path = ThirdviewController;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 				1D605D331FCB80C000182C28 /* FoodViewController.m in Sources */,
 				1D605D361FCB898200182C28 /* FoodModule.m in Sources */,
 				1D605D2E1FCB7CA800182C28 /* FoodDetailViewController.m in Sources */,
+				1D5081C11FCF34DA00DE260D /* TableViewController.m in Sources */,
 				1D9773F41FC5B158001DB56C /* SecondViewController.m in Sources */,
 				1D7E6A251FB1DAEF0002E1DA /* FirstViewController.m in Sources */,
 				1DFA73321FCCB8E30019740D /* GroupModule.m in Sources */,
