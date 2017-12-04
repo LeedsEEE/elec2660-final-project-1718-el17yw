@@ -1,18 +1,18 @@
 //
-//  TableViewController.m
+//  ThirdTableViewController.m
 //  Project
 //
-//  Created by Rick on 2017/11/29.
+//  Created by Rick on 2017/12/4.
 //  Copyright © 2017年 Rick. All rights reserved.
 //
 
-#import "TableViewController.h"
+#import "ThirdTableViewController.h"
 
-@interface TableViewController ()
+@interface ThirdTableViewController ()
 
 @end
 
-@implementation TableViewController
+@implementation ThirdTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

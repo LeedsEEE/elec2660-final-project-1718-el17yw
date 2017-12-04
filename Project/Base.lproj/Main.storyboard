@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -126,43 +128,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxa-ko-zuk">
-                                <rect key="frame" x="116" y="129" width="142" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                <state key="normal" title="Breakfast"/>
-                                <connections>
-                                    <segue destination="0jv-iP-fYd" kind="show" id="SK0-Xo-dwv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9U-1t-fAg">
-                                <rect key="frame" x="142" y="285" width="90" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9U-1t-fAg">
+                                <rect key="frame" x="139" y="309" width="90" height="48"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <state key="normal" title="Lunch"/>
                                 <connections>
                                     <segue destination="0jv-iP-fYd" kind="show" id="7gS-4q-Wqs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LR9-Bh-Jwl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LR9-Bh-Jwl">
                                 <rect key="frame" x="139" y="467" width="97" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <state key="normal" title="Dinner"/>
                                 <connections>
                                     <segue destination="0jv-iP-fYd" kind="show" id="RZn-Vd-Fe8"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zH3-BM-AoZ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zH3-BM-AoZ">
                                 <rect key="frame" x="0.0" y="568" width="375" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Totoal Calorie: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOp-UJ-XVp">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Totoal Calorie: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOp-UJ-XVp">
                                         <rect key="frame" x="8" y="10" width="159" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0.00K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJ9-rv-w6A">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJ9-rv-w6A">
                                         <rect key="frame" x="298" y="10" width="69" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -178,8 +169,29 @@
                                     <constraint firstAttribute="height" constant="50" id="wRn-lJ-2mF"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxa-ko-zuk">
+                                <rect key="frame" x="116" y="171" width="142" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <state key="normal" title="Breakfast"/>
+                                <connections>
+                                    <segue destination="0jv-iP-fYd" kind="show" id="SK0-Xo-dwv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zH3-BM-AoZ" secondAttribute="trailing" id="4Kl-c5-6Du"/>
+                            <constraint firstItem="LR9-Bh-Jwl" firstAttribute="firstBaseline" secondItem="D9U-1t-fAg" secondAttribute="baseline" constant="36" symbolType="layoutAnchor" id="8yg-o0-kr2"/>
+                            <constraint firstItem="zH3-BM-AoZ" firstAttribute="centerX" secondItem="D9U-1t-fAg" secondAttribute="centerX" id="GVJ-i6-nJx"/>
+                            <constraint firstItem="Sxa-ko-zuk" firstAttribute="centerX" secondItem="DrL-Jj-32P" secondAttribute="centerX" id="TVF-9E-MQh"/>
+                            <constraint firstItem="D9U-1t-fAg" firstAttribute="firstBaseline" secondItem="Sxa-ko-zuk" secondAttribute="baseline" constant="36" symbolType="layoutAnchor" id="UIb-dC-1gn"/>
+                            <constraint firstItem="zH3-BM-AoZ" firstAttribute="leading" secondItem="ufv-lD-4m7" secondAttribute="leading" id="Y8A-eN-eII"/>
+                            <constraint firstItem="zH3-BM-AoZ" firstAttribute="bottom" secondItem="DrL-Jj-32P" secondAttribute="bottom" id="d0L-Ev-WRo"/>
+                            <constraint firstItem="zH3-BM-AoZ" firstAttribute="top" secondItem="LR9-Bh-Jwl" secondAttribute="bottom" constant="53" id="dfk-Kk-QuK"/>
+                            <constraint firstItem="D9U-1t-fAg" firstAttribute="centerX" secondItem="DrL-Jj-32P" secondAttribute="centerX" id="gzq-sY-HNh"/>
+                            <constraint firstItem="zH3-BM-AoZ" firstAttribute="centerX" secondItem="Sxa-ko-zuk" secondAttribute="centerX" id="l97-bt-BPd"/>
+                            <constraint firstItem="zH3-BM-AoZ" firstAttribute="centerX" secondItem="LR9-Bh-Jwl" secondAttribute="centerX" id="wfK-YR-xKC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DrL-Jj-32P"/>
                     </view>
                     <navigationItem key="navigationItem" id="Uct-Rh-xci"/>
@@ -189,7 +201,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OO5-ab-AfJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2534" y="-599"/>
+            <point key="canvasLocation" x="2533.5999999999999" y="-599.55022488755628"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Pev-Ix-2Ra">
+            <objects>
+                <viewController id="C5i-4j-A2u" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kxH-PD-h2g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="d7T-Bj-qCY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1at-5k-Osw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660" y="-126"/>
         </scene>
         <!--Item-->
         <scene sceneID="uQ1-GQ-9GU">
@@ -216,17 +243,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hmu-e6-haq">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmu-e6-haq">
                                 <rect key="frame" x="0.0" y="572" width="375" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="11111K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpG-DH-FKi">
-                                        <rect key="frame" x="294.5" y="10" width="73" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11111K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpG-DH-FKi">
+                                        <rect key="frame" x="294" y="10" width="73" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Totoal Calorie: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10g-9w-flM">
-                                        <rect key="frame" x="12" y="15" width="163" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Totoal Calorie: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10g-9w-flM">
+                                        <rect key="frame" x="8" y="10" width="163" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="163" id="CDV-pF-7JI"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                         <nil key="highlightedColor"/>
@@ -243,6 +273,11 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hmu-e6-haq" firstAttribute="leading" secondItem="izg-Kh-79S" secondAttribute="leading" id="13h-wC-dKL"/>
+                            <constraint firstItem="hmu-e6-haq" firstAttribute="bottom" secondItem="QQT-Jt-rmJ" secondAttribute="bottom" constant="4" id="ExY-Bh-4Mg"/>
+                            <constraint firstAttribute="trailing" secondItem="hmu-e6-haq" secondAttribute="trailing" id="OMt-11-WHC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QQT-Jt-rmJ"/>
                     </view>
                     <connections>
