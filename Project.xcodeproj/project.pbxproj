@@ -22,6 +22,9 @@
 		1D7E6A301FB1DAEF0002E1DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E6A2F1FB1DAEF0002E1DA /* main.m */; };
 		1D7E6A3A1FB1DAEF0002E1DA /* ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E6A391FB1DAEF0002E1DA /* ProjectTests.m */; };
 		1D7E6A451FB1DAEF0002E1DA /* ProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E6A441FB1DAEF0002E1DA /* ProjectUITests.m */; };
+		1D8F78B41FD5F60700BEFF05 /* ExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8F78B31FD5F60700BEFF05 /* ExerciseViewController.m */; };
+		1D8F78B71FD5F61A00BEFF05 /* ExerciseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8F78B61FD5F61A00BEFF05 /* ExerciseDetailViewController.m */; };
+		1D8F78BA1FD602CB00BEFF05 /* GroupModule2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8F78B91FD602CB00BEFF05 /* GroupModule2.m */; };
 		1D9773F41FC5B158001DB56C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9773F31FC5B158001DB56C /* SecondViewController.m */; };
 		1DFA732F1FCCB7F20019740D /* dataModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA732E1FCCB7F20019740D /* dataModule.m */; };
 		1DFA73321FCCB8E30019740D /* GroupModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA73311FCCB8E30019740D /* GroupModule.m */; };
@@ -74,6 +77,12 @@
 		1D7E6A401FB1DAEF0002E1DA /* ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7E6A441FB1DAEF0002E1DA /* ProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectUITests.m; sourceTree = "<group>"; };
 		1D7E6A461FB1DAEF0002E1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D8F78B21FD5F60700BEFF05 /* ExerciseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExerciseViewController.h; sourceTree = "<group>"; };
+		1D8F78B31FD5F60700BEFF05 /* ExerciseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExerciseViewController.m; sourceTree = "<group>"; };
+		1D8F78B51FD5F61A00BEFF05 /* ExerciseDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExerciseDetailViewController.h; sourceTree = "<group>"; };
+		1D8F78B61FD5F61A00BEFF05 /* ExerciseDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExerciseDetailViewController.m; sourceTree = "<group>"; };
+		1D8F78B81FD602CB00BEFF05 /* GroupModule2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupModule2.h; sourceTree = "<group>"; };
+		1D8F78B91FD602CB00BEFF05 /* GroupModule2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupModule2.m; sourceTree = "<group>"; };
 		1D9773F21FC5B158001DB56C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		1D9773F31FC5B158001DB56C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		1DFA732D1FCCB7F20019740D /* dataModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dataModule.h; sourceTree = "<group>"; };
@@ -167,10 +176,10 @@
 		1D9773F01FC5B0F6001DB56C /* SecondViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1D605D2C1FCB7CA800182C28 /* FoodDetailViewController.h */,
-				1D605D2D1FCB7CA800182C28 /* FoodDetailViewController.m */,
 				1D605D311FCB80C000182C28 /* FoodViewController.h */,
 				1D605D321FCB80C000182C28 /* FoodViewController.m */,
+				1D605D2C1FCB7CA800182C28 /* FoodDetailViewController.h */,
+				1D605D2D1FCB7CA800182C28 /* FoodDetailViewController.m */,
 				1D9773F21FC5B158001DB56C /* SecondViewController.h */,
 				1D9773F31FC5B158001DB56C /* SecondViewController.m */,
 				1D605D341FCB898200182C28 /* FoodModule.h */,
@@ -186,12 +195,18 @@
 		1D9773F11FC5B11C001DB56C /* ThirdviewController */ = {
 			isa = PBXGroup;
 			children = (
+				1D8F78B21FD5F60700BEFF05 /* ExerciseViewController.h */,
+				1D8F78B31FD5F60700BEFF05 /* ExerciseViewController.m */,
+				1D8F78B51FD5F61A00BEFF05 /* ExerciseDetailViewController.h */,
+				1D8F78B61FD5F61A00BEFF05 /* ExerciseDetailViewController.m */,
 				1D38E8701FD5F47C0052A960 /* ThirdTableViewController.h */,
 				1D38E8711FD5F47C0052A960 /* ThirdTableViewController.m */,
 				1D38E8651FD5F1120052A960 /* ExerciseModule.h */,
-				1D38E8661FD5F1120052A960 /* ExerciseModule.m */,
 				1D38E8681FD5F1300052A960 /* ExerciseDataModel.h */,
 				1D38E8691FD5F1300052A960 /* ExerciseDataModel.m */,
+				1D38E8661FD5F1120052A960 /* ExerciseModule.m */,
+				1D8F78B81FD602CB00BEFF05 /* GroupModule2.h */,
+				1D8F78B91FD602CB00BEFF05 /* GroupModule2.m */,
 			);
 			path = ThirdviewController;
 			sourceTree = "<group>";
@@ -330,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D8F78B41FD5F60700BEFF05 /* ExerciseViewController.m in Sources */,
 				1D605D331FCB80C000182C28 /* FoodViewController.m in Sources */,
 				1D38E86A1FD5F1300052A960 /* ExerciseDataModel.m in Sources */,
 				1D605D361FCB898200182C28 /* FoodModule.m in Sources */,
@@ -342,6 +358,8 @@
 				1D7E6A301FB1DAEF0002E1DA /* main.m in Sources */,
 				1D7E6A221FB1DAEF0002E1DA /* AppDelegate.m in Sources */,
 				1DFA732F1FCCB7F20019740D /* dataModule.m in Sources */,
+				1D8F78B71FD5F61A00BEFF05 /* ExerciseDetailViewController.m in Sources */,
+				1D8F78BA1FD602CB00BEFF05 /* GroupModule2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

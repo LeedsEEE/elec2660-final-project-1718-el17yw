@@ -12,7 +12,7 @@
 -(instancetype)init{
     self=[super init];
     if (self) {
-        self.exerciseModules=[NSMutableArray array];
+        self.aerobicExercises=[NSMutableArray array];
         
         ExerciseModule * archeryModule=[[ExerciseModule alloc] init];
         archeryModule.exerciseName=@"Archery";
@@ -50,6 +50,19 @@
         frisbeeModule.exerciseName=@"Frisbee";
         frisbeeModule.cal=34;
         
+        
+        [self.aerobicExercises addObject:archeryModule];
+        [self.aerobicExercises addObject:badmintonModule];
+        [self.aerobicExercises addObject:basketballModule];
+        [self.aerobicExercises addObject:billiardsModule];
+        [self.aerobicExercises addObject:bowlingModule];
+        [self.aerobicExercises addObject:boxingModule];
+        [self.aerobicExercises addObject:broomballModule];
+        [self.aerobicExercises addObject:footballModule];
+        [self.aerobicExercises addObject:frisbeeModule];
+        
+        self.anaerobicExercises = [NSMutableArray array];
+        
         ExerciseModule * golfModule=[[ExerciseModule alloc] init];
         golfModule.exerciseName=@"Golf";
         golfModule.cal=60;
@@ -78,22 +91,14 @@
         tennisModule.exerciseName=@"Tennis";
         tennisModule.cal=102;
         
-        [self.exerciseModules addObject:archeryModule];
-        [self.exerciseModules addObject:badmintonModule];
-        [self.exerciseModules addObject:basketballModule];
-        [self.exerciseModules addObject:billiardsModule];
-        [self.exerciseModules addObject:bowlingModule];
-        [self.exerciseModules addObject:boxingModule];
-        [self.exerciseModules addObject:broomballModule];
-        [self.exerciseModules addObject:footballModule];
-        [self.exerciseModules addObject:frisbeeModule];
-        [self.exerciseModules addObject:golfModule];
-        [self.exerciseModules addObject:handballModule];
-        [self.exerciseModules addObject:hockeyModule];
-        [self.exerciseModules addObject:horsebackRidingModule];
-        [self.exerciseModules addObject:rugbyModule];
-        [self.exerciseModules addObject:tableTennisModule];
-        [self.exerciseModules addObject:tennisModule];
+       
+        [self.anaerobicExercises addObject:golfModule];
+        [self.anaerobicExercises addObject:handballModule];
+        [self.anaerobicExercises addObject:hockeyModule];
+        [self.anaerobicExercises addObject:horsebackRidingModule];
+        [self.anaerobicExercises addObject:rugbyModule];
+        [self.anaerobicExercises addObject:tableTennisModule];
+        [self.anaerobicExercises addObject:tennisModule];
     }
     return self;
 }

@@ -11,7 +11,9 @@
 
 
 @interface ExerciseDataModel : NSObject
-@property (strong,nonatomic)NSMutableArray *exerciseModules;
+@property (strong,nonatomic)NSMutableArray *aerobicExercises;
+@property (strong,nonatomic)NSMutableArray *anaerobicExercises;
+
 
 
 @end

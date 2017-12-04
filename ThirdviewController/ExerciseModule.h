@@ -14,4 +14,5 @@
 @property NSInteger cal;
 @property NSInteger time;
 
+@property NSInteger amount;
 @end
