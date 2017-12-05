@@ -12,6 +12,7 @@
 
 @property double aerobic_totoal;
 @property double anaerobic_totoal;
+
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 
 @end
